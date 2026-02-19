@@ -1,0 +1,70 @@
+{
+  "expo": {
+    "name": "StepXP",
+    "slug": "StepXP",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.stepxp.app",
+      "infoPlist": {
+        "NSHealthShareUsageDescription": "StepXP reads your step count to calculate XP and track your daily fitness goal.",
+        "NSHealthUpdateUsageDescription": "StepXP writes workout and step data to Apple Health so your activity is always up to date.",
+        "NSMotionUsageDescription": "StepXP uses motion data to count your steps accurately.",
+        "NSPhotoLibraryUsageDescription": "StepXP needs photo library access so you can set a profile picture."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.stepxp.app",
+      "permissions": [
+        "android.permission.ACTIVITY_RECOGNITION",
+        "android.permission.health.READ_STEPS",
+        "android.permission.health.READ_DISTANCE",
+        "android.permission.health.READ_ACTIVE_CALORIES_BURNED",
+        "android.permission.health.READ_HEART_RATE",
+        "android.permission.health.WRITE_STEPS",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_IMAGES"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "StepXP needs photo library access so you can set a profile picture."
+        }
+      ],
+      "expo-dev-client",
+      [
+        "expo-health-connect",
+        {
+          "package": "com.stepxp.app"
+        }
+      ],
+      [
+        "react-native-health",
+        {
+          "isClinicalDataEnabled": false
+        }
+      ]
+    ]
+  }
+}
