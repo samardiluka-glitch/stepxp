@@ -24,8 +24,7 @@ import {
     HelpCircle,
     ChevronRight,
 } from 'lucide-react-native';
-import { signOut } from 'firebase/auth';
-import { auth } from '../src/services/firebase';
+import { signOut, auth } from '../src/services/firebase';
 import { useStepStore } from '../src/store/useStepStore';
 
 const GREEN = '#22c55e';

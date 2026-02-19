@@ -9,8 +9,7 @@ import {
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
-import { onAuthStateChanged } from 'firebase/auth';
-import { auth } from '../src/services/firebase';
+import { onAuthStateChanged, auth } from '../src/services/firebase';
 
 const { width } = Dimensions.get('window');
 const BAR_WIDTH = width * 0.72;

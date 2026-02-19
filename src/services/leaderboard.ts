@@ -7,8 +7,8 @@ import {
     getDocs,
     getCountFromServer,
     Timestamp,
-} from 'firebase/firestore';
-import { db } from './firebase';
+    db,
+} from './firebase';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 

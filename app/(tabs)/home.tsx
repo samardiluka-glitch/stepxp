@@ -10,8 +10,7 @@ import {
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { Settings, Footprints, MapPin, Timer, PersonStanding } from 'lucide-react-native';
-import { onAuthStateChanged } from 'firebase/auth';
-import { auth } from '../../src/services/firebase';
+import { auth, onAuthStateChanged } from '../../src/services/firebase';
 import { useStepStore } from '../../src/store/useStepStore';
 import { getRankProgress, DAILY_GOAL_STEPS } from '../../src/services/evolution';
 import { CircularProgress } from '../../src/components/CircularProgress';

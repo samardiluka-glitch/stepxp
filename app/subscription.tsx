@@ -12,7 +12,15 @@ import {
 import { useRouter } from 'expo-router';
 import { ArrowLeft, CheckCircle2, Zap, BarChart2, Medal } from 'lucide-react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import type { PurchasesPackage } from 'react-native-purchases';
+// import type { PurchasesPackage } from 'react-native-purchases';
+// Define minimal type for mock
+interface PurchasesPackage {
+    product: {
+        priceString: string;
+        description: string;
+        identifier: string;
+    };
+}
 import {
     getStepXPOfferings,
     purchaseProPlan,

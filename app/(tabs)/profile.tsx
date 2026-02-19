@@ -16,8 +16,7 @@ import {
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { Settings, CheckCircle2, Globe, ChevronRight, Bell, Clock, User } from 'lucide-react-native';
-import { doc, getDoc, setDoc } from 'firebase/firestore';
-import { auth, db } from '../../src/services/firebase';
+import { auth, db, doc, getDoc, setDoc } from '../../src/services/firebase';
 import { useStepStore } from '../../src/store/useStepStore';
 import { getRankProgress } from '../../src/services/evolution';
 

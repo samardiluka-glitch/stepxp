@@ -14,7 +14,7 @@ import { useRouter } from 'expo-router';
 import { ArrowLeft, MoreHorizontal, User } from 'lucide-react-native';
 import { useLeaderboard, type LeaderboardTab } from '../../src/hooks/useLeaderboard';
 import type { LeaderboardUser, TimeFilter } from '../../src/services/leaderboard';
-import { Timestamp } from 'firebase/firestore';
+import { Timestamp } from '../../src/services/firebase';
 
 const { width } = Dimensions.get('window');
 const GREEN = '#22c55e';

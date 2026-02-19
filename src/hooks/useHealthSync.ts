@@ -26,8 +26,7 @@ import {
 } from 'react-native-health-connect';
 
 // ── Firebase ──────────────────────────────────────────────────────────────────
-import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
-import { auth, db } from '../services/firebase';
+import { auth, db, doc, setDoc, serverTimestamp } from '../services/firebase';
 
 // ── Store ─────────────────────────────────────────────────────────────────────
 import { useStepStore } from '../store/useStepStore';

@@ -20,9 +20,7 @@ import {
 import { useRouter } from 'expo-router';
 import * as ImagePicker from 'expo-image-picker';
 import { ArrowLeft, AtSign, FileText, Mail, ShieldCheck, Camera, CheckCircle } from 'lucide-react-native';
-import { updateProfile } from 'firebase/auth';
-import { doc, setDoc, getDoc } from 'firebase/firestore';
-import { auth, db } from '../src/services/firebase';
+import { auth, db, doc, setDoc, getDoc, updateProfile } from '../src/services/firebase';
 
 const GREEN = '#22c55e';
 

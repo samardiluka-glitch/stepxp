@@ -15,9 +15,7 @@ import {
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { ArrowLeft, ShieldCheck, Lock, KeyRound, ExternalLink, Trash2 } from 'lucide-react-native';
-import { sendPasswordResetEmail, deleteUser } from 'firebase/auth';
-import { doc, getDoc, setDoc } from 'firebase/firestore';
-import { auth, db } from '../src/services/firebase';
+import { auth, db, doc, getDoc, setDoc, sendPasswordResetEmail, deleteUser } from '../src/services/firebase';
 
 const GREEN = '#22c55e';
 
